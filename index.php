@@ -1,3 +1,6 @@
+<?php
+    include include 'quizs.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,10 +55,35 @@
     </section>
     <section>
         <table class="table table-striped table-bordered">
-            <thead id="courses">
-        
+            <thead>
+                <tr>
+                    <td>Titre du quiz</td>
+                    <td>Illustration</td>
+                    <td>Auteur</td>
+                    <td>Nombre de questions</td>
+                </tr>
             </thead>
             <tbody id="content">
+            <?php
+                $i = 0;
+                foreach($quizs as $quiz) {
+                    echo "<tr>";
+                        echo "<td>";
+                            echo "<a href='quiz/view/$i'>$quiz[Title]</a>";
+                        echo "</td>";
+                        echo "<td>";
+                            echo "<img src='/img/$i.jpg'>";
+                        echo "</td>";
+                        echo "<td>";
+                            echo "<a>$quiz[Author]</a>";
+                        echo "</td>";
+                        echo "<td>";
+                            echo count($quiz['Questions']);
+                        echo "</td>";
+                    echo "</tr>";
+                    $i += 1;
+                }
+            ?>
 
             </tbody>
         </table>
@@ -71,7 +99,7 @@
 
 
 
-<!-- 
+<!--
 <section class="container">
     <h1>INSCRIPTION</h1>
     <div class="row g-3 align-items-center">
@@ -91,7 +119,7 @@
 
     <table class="table table-striped table-bordered">
         <thead id="courses">
-    
+
         </thead>
         <tbody id="content">
 

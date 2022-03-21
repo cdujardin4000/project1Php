@@ -2,7 +2,7 @@
 $quizs = [
     0 => [
         "Title" => "Connaissances générales",
-        "Picture" => "",
+        "Picture" => "0.png",
         "Author" => "Cédric",
         "Questions" => [
             0 => "Jusqu’en 1923, comment s’appelait la ville turque d’Istanbul ?",
@@ -12,7 +12,7 @@ $quizs = [
     ],
     1 => [
         "Title" => "Géographie du monde",
-        "Picture" => "",
+        "Picture" => "1.jpg",
         "Author" => "Cédric",
         "Questions" => [
             0 => "Quelle est la capitale du Canada ?",
@@ -21,7 +21,7 @@ $quizs = [
     ],
     2 => [
         "Title" => "Langue, littérature et art",
-        "Picture" => "",
+        "Picture" => "2.jpg",
         "Author" => "Cédric",
         "Questions" => [
             0 => "Quel artiste a peint le plafond de la chapelle Sixtine à Rome ? ",
@@ -31,7 +31,7 @@ $quizs = [
     ],
     3 => [
         "Title" => "Sport",
-        "Picture" => "",
+        "Picture" => "3.jpg",
         "Author" => "Cédric",
         "Questions" => [
             0 => "Quel pilote a-t-il remporté le plus de championnats de Formule 1 ?",
@@ -42,7 +42,7 @@ $quizs = [
     ],
     4 => [
         "Title" => "Cinéma et télévision",
-        "Picture" => "",
+        "Picture" => "4.jpg",
         "Author" => "Cédric",
         "Questions" => [
             0 => "En quelle année Netflix a-t-il été créé?",
