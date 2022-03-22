@@ -1,5 +1,6 @@
 <?php
-    include include 'quizs.php';
+    include 'quizs.php';
+    include 'view.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,10 +70,10 @@
                 foreach($quizs as $quiz) {
                     echo "<tr>";
                         echo "<td>";
-                            echo "<a href='quiz/view/$i'>$quiz[Title]</a>";
+                            echo "<a href='view.php?id=$i'>$quiz[Title]</a>";
                         echo "</td>";
                         echo "<td>";
-                            echo "<img src='/img/$i.jpg'>";
+                            echo "<img src='img/$i.jpg'>";
                         echo "</td>";
                         echo "<td>";
                             echo "<a>$quiz[Author]</a>";
@@ -84,7 +85,6 @@
                     $i += 1;
                 }
             ?>
-
             </tbody>
         </table>
     </section>
@@ -97,32 +97,3 @@
 </body>
 </html>
 
-
-
-<!--
-<section class="container">
-    <h1>INSCRIPTION</h1>
-    <div class="row g-3 align-items-center">
-        <div class="col-auto">
-            <label for="nom">NOM</label>
-            <input class="form-control" id="nom" type="text">
-        </div>
-        <div class="col-auto">
-            <label for="prenom">PRENOM</label>
-            <input class="form-control" id="prenom" type="text">
-        </div>
-        <div class="">
-            <button class="btn btn-primary" id="inscription">INSCRIPTION</button>
-        </div>
-    </div>
-    <button id="btn_lire" class="btn btn-outline-primary">SIMULATE SCHOOLYEAR</button>
-
-    <table class="table table-striped table-bordered">
-        <thead id="courses">
-
-        </thead>
-        <tbody id="content">
-
-        </tbody>
-    </table>
-</section>-->
